@@ -1,0 +1,10 @@
+--- eventlircd-0.0.1+svn20110409.0930.orig/etc/Makefile.am
++++ eventlircd-0.0.1+svn20110409.0930/etc/Makefile.am
+@@ -2,7 +2,6 @@ evmapdir = $(EVMAP_DIR)
+ 
+ dist_evmap_DATA = \
+ 	03_0419_0001.evmap \
+-	03_05a4_9881.evmap \
+ 	03_0766_0204.evmap \
+ 	03_1241_e000.evmap \
+ 	03_147a_e02d.evmap \

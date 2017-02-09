@@ -1,0 +1,11 @@
+--- eventlircd-0.0.1+svn20110129.2130.orig/configure.ac
++++ eventlircd-0.0.1+svn20110129.2130/configure.ac
+@@ -136,7 +136,6 @@ AX_C_CHECK_FLAG([-Wstrict-overflow=5],[]
+ AX_C_CHECK_FLAG([-Wundef],[],[],[CFLAGS="$CFLAGS -Wundef"],[])
+ AX_LD_CHECK_FLAG([-flto],[],[],[LDFLAGS="$LDFLAGS -flto"],[])
+ AX_LD_CHECK_FLAG([-fuse-ld=gold],[],[],[LDFLAGS="$LDFLAGS -fuse-ld=gold"],[])
+-AX_LD_CHECK_FLAG([-fuse-linker-plugin],[],[],[LDFLAGS="$LDFLAGS -fuse-linker-plugin"],[])
+ AX_LD_CHECK_FLAG([-fwhole-program],[],[],[LDFLAGS="$LDFLAGS -fwhole-program"],[])
+ AX_LD_CHECK_FLAG([-fvisibility=hidden],[],[],[LDFLAGS="$LDFLAGS -fvisibility=hidden"],[])
+ AX_LD_CHECK_FLAG([-Wl,--as-needed],[],[],[LDFLAGS="$LDFLAGS -Wl,--as-needed"],[])
+

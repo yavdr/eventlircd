@@ -1,0 +1,41 @@
+This patch disables lircd's --uinput option (which causes a weird key repeat behaviour)
+and notifies lircd2uinput about the newly added lircd socket if installed.
+
+Author: Alexander Grothe
+
+--- a/udev/lircd_helper.in
++++ b/udev/lircd_helper.in
+@@ -44,9 +44,9 @@
+             daemon='/usr/sbin/lircd'
+             daemon="${daemon} --driver=${lircd_driver}"
+             daemon="${daemon} --device=${DEVNAME}"
+-            if test ! "x${lircd_uinput_disable}" = "xtrue" ; then
+-                daemon="${daemon} --uinput"
+-            fi
++            #if test ! "x${lircd_uinput_disable}" = "xtrue" ; then
++            #    daemon="${daemon} --uinput"
++            #fi
+             daemon="${daemon} --output=@localstatedir@/run/lirc/lircd-${devname_instance}"
+             daemon="${daemon} --pidfile=@localstatedir@/run/lirc/lircd-${devname_instance}.pid"
+             daemon="${daemon} ${lircd_conf}"
+@@ -56,6 +56,9 @@
+                 rm -f "@localstatedir@/run/lirc/lircd-${devlink_instance}"
+                 ln -s "lircd-${devname_instance}" "@localstatedir@/run/lirc/lircd-${devlink_instance}"
+             done
++			if [ -x /usr/bin/lircd2uinput-add ]; then
++					/usr/bin/lircd2uinput --lircd-socket="/var/run/lirc/lircd-${devname_instance}" &
++			fi
+         fi
+         ;;
+     remove)
+--- a/configure.ac
++++ b/configure.ac
+@@ -15,7 +15,7 @@
+ dnl You should have received a copy of the GNU General Public License
+ dnl along with eventlircd.  If not, see <http://www.gnu.org/licenses/>.
+ 
+-AC_INIT([eventlircd], [0.0.0])
++AC_INIT([eventlircd], [0.0.2])
+ 
+ AC_PREREQ([2.63])
+ 

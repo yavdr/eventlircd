@@ -1,0 +1,11 @@
+--- eventlircd-0.0.1+svn20110129.2130.orig/udev/lircd_helper.in
++++ eventlircd-0.0.1+svn20110129.2130/udev/lircd_helper.in
+@@ -35,7 +35,7 @@ case "${ACTION}" in
+         fi
+         devname_instance=`echo ${DEVNAME} | sed -e 's/\/\+/~/g' -e 's/^~dev~//'`
+         if test ! -e "@localstatedir@/run/lirc/lircd-${devname_instance}.pid" ; then
+-            daemon='@sbindir@/lircd'
++            daemon='/usr/sbin/lircd'
+             daemon="${daemon} --driver=${lircd_driver}"
+             daemon="${daemon} --device=${DEVNAME}"
+             daemon="${daemon} --uinput"

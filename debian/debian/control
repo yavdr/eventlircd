@@ -1,0 +1,17 @@
+Source: eventlircd
+Section: utils
+Priority: extra
+Maintainer: Holger Schvestka <hotzenplotz5@gmx.de>
+Build-Depends: debhelper (>= 7.0.50~), dh-systemd, pkg-config, libudev-dev, dh-autoreconf, libtool, gawk, mawk
+Standards-Version: 3.9.1
+Homepage: http://code.google.com/p/eventlircd/
+
+Package: eventlircd
+Architecture: any
+Depends: ${misc:Depends}
+Description: The eventlircd daemon provides additional functions for LIRC devices
+ Eventlircd provides four functions for LIRC devices 
+ converting multiple Linux input event devices into an lircd socket, 
+ separating keyboard and mouse/joystick functionality, 
+ mapping keyboard shortcut key code sequences to single key codes, and 
+ hotplugging using udev

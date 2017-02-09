@@ -1,0 +1,15 @@
+--- /home/alexander/eventlircd-0.0.1+svn20110409.0930/src/input.c	2011-04-09 09:16:47.000000000 +0200
++++ eventlircd-0.0.1+svn20110409.0930/src/input.c	2011-10-05 19:40:32.665936101 +0200
+@@ -1102,9 +1102,9 @@
+ 		     if (evkey_type[device->current.event_out.code] == EVENTLIRCD_EVKEY_TYPE_KEY) {
+ 			     time_delta = 1000000 * (device->current.event_out.time.tv_sec  - previous->event_out.time.tv_sec ) +
+ 			                            (device->current.event_out.time.tv_usec - previous->event_out.time.tv_usec);
+-			     if (((previous->repeat_count == 0) && (time_delta <  900000)) ||
+-			         ((previous->repeat_count == 1) && (time_delta <  500000)) ||
+-			         ((previous->repeat_count == 2) && (time_delta <  300000)) ||
++			     if (((previous->repeat_count == 0) && (time_delta <  200000)) ||
++			         ((previous->repeat_count == 1) && (time_delta <  200000)) ||
++			         ((previous->repeat_count == 2) && (time_delta <  200000)) ||
+ 			         ((previous->repeat_count == 3) && (time_delta <  200000)) ||
+ 			         ((previous->repeat_count == 4) && (time_delta <  150000)) ||
+ 			         ((previous->repeat_count >= 5) && (time_delta <  100000))) {

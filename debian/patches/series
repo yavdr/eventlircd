@@ -1,0 +1,6 @@
+03_147a_e02d.evmap.patch
+lircd-helper
+#remove03_05a4_9881evmap # can not be applied
+remove03_05a4_9881evmap-makefile
+eventlircd-repeat
+yavdr_lircd_helper.diff

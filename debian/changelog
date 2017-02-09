@@ -1,0 +1,121 @@
+eventlircd (0.0.2+git20160515-0yavdr0~xenial) xenial; urgency=medium
+
+  * rebase package on eventlircd GitHub repository:
+    https://github.com/OpenELEC/eventlircd.git
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 09 Feb 2017 09:57:42 +0100
+
+eventlircd (0.0.1+svn20110409.0930-13yavdr0~xenial) xenial; urgency=medium
+
+  * add eventlircd.socket (for socket activation)
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 25 Feb 2016 21:58:47 +0100
+
+eventlircd (0.0.1+svn20110409.0930-12yavdr0~xenial) xenial; urgency=medium
+
+  * add patch for compatibility with Kernel 4.4 by Stephan Raue
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Thu, 25 Feb 2016 21:53:04 +0100
+
+eventlircd (0.0.1+svn20110409.0930-11yavdr0~xenial) xenial; urgency=medium
+
+  * rebuild, rename
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 30 Jan 2016 21:46:38 +0100
+
+eventlircd (0.0.1+svn20110409.0930-10yavdr0~trustyubuntu1) xenial; urgency=medium
+
+  * rebuild
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 30 Jan 2016 21:30:00 +0100
+
+eventlircd (0.0.1+svn20110409.0930-9yavdr0~trusty) xenial; urgency=medium
+
+  * add systemd service and tmpfile
+
+ -- Alexander Grothe <seahawk1986@gmx.de>  Sat, 30 Jan 2016 19:39:43 +0100
+
+eventlircd (0.0.1+svn20110409.0930-8yavdr3~trusty) trusty; urgency=medium
+
+  * rebuild for trusty thar
+
+ -- Alexander Grothe <seahawk1986@hotmail.com>  Tue, 08 Apr 2014 16:18:04 +0200
+
+eventlircd (0.0.1+svn20110409.0930-8yavdr3~trusty) trusty; urgency=medium
+
+  * build for trusty thar
+
+ -- Alexander Grothe <seahawk1986@hotmail.com>  Wed, 11 Dec 2013 13:14:51 +0100
+
+eventlircd (0.0.1+svn20110409.0930-8yavdr2~precise) precise; urgency=medium
+
+  * raise version
+
+ -- Gerald Dachs <gda@dachsweb.de>  Thu, 18 Jul 2013 00:05:36 +0200
+
+eventlircd (0.0.1+svn20110409.0930-7yavdr4~precise) precise; urgency=medium
+
+  * removed broken repeat filter
+
+ -- Gerald Dachs <gda@dachsweb.de>  Wed, 17 Jul 2013 23:38:00 +0200
+
+eventlircd (0.0.1+svn20110409.0930-7yavdr3~precise) precise; urgency=medium
+
+  * corrected lircd_helper
+
+ -- Alexander Grothe <alexandergrothe@gmx.net>  Sun, 05 Aug 2012 07:45:42 +0200
+
+eventlircd (0.0.1+svn20110409.0930-7yavdr2~precise) precise; urgency=medium
+
+  * changed path for lircd2uinput
+
+ -- Alexander Grothe <alexandergrothe@gmx.net>  Mon, 04 Jun 2012 19:29:53 +0200
+
+eventlircd (0.0.1+svn20110409.0930-7yavdr1~precise) precise; urgency=medium
+
+  * use lircd2uinput instead of --uinput for lircd processes started by lircd_helper
+
+ -- Holger Schvestka <hotzenplotz5@gmx.de>  Tue, 14 Feb 2012 14:49:28 +0200
+
+eventlircd (0.0.1+svn20110409.0930-7yavdr1~oneiric) oneiric; urgency=medium
+
+  * added configurable repeat filter
+
+ -- Gerald Dachs <gda@dachsweb.de>  Fri, 28 Oct 2011 20:54:12 +0200
+
+eventlircd (0.0.1+svn20110409.0930-6yavdr1~oneiric) oneiric; urgency=low
+
+  * removed last change
+  * removed -flto from linker flags, breaks build on oneiric
+
+ -- Gerald Dachs <gda@dachsweb.de>  Sat, 15 Oct 2011 00:13:46 +0200
+
+eventlircd (0.0.1+svn20110409.0930-5yavdr1~oneiric) oneiric; urgency=medium
+
+  * link explicit against librt
+
+ -- Gerald Dachs <gda@dachsweb.de>  Fri, 14 Oct 2011 11:47:19 +0200
+
+eventlircd (0.0.1+svn20110409.0930-4yavdr1~oneiric) oneiric; urgency=medium
+
+  * added eventlircd-repeat patch
+
+ -- Holger Schvestka <hotzenplotz5@gmx.de>  Wed, 05 Oct 2011 21:49:28 +0200
+
+eventlircd (0.0.1+svn20110409.0930-3yavdr1~natty) natty; urgency=low
+
+  * patched evmap 03_147a_e02d
+
+ -- Gerald Dachs <gda@dachsweb.de>  Sun, 10 Jul 2011 01:18:11 +0200
+
+eventlircd (0.0.1+svn20110409.0930-2yavdr1~natty) natty; urgency=low
+
+  * added missing option -R to getopt_long
+
+ -- Gerald Dachs <gda@dachsweb.de>  Thu, 07 Jul 2011 20:56:19 +0200
+
+eventlircd (0.0.1+svn20110409.0930-1yavdr2~natty) natty; urgency=low
+
+  * Initial release
+
+ -- Holger Schvestka <hotzenplotz5@gmx.de>  Sat, 29 Jan 2011 17:30:20 +0200
